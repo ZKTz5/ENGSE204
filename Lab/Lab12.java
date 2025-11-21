@@ -23,14 +23,17 @@ public class Lab12 {
         System.out.print("รหัสสินค้าที่ต้องการค้นหา : ");
         int searchID = scanner.nextInt();
 
+        boolean found = false;
         for(int i = 0 ; i < n ; i++){
             if(productID[i] == searchID){
                 System.out.println("จำนวนคงคลัง = "+ StockQuantity[i]);
+                found = true;
                 break;
             }
-            else{
-                System.out.println("Product " + searchID + " not found");
-            }
+        }
+        
+        if (found == false) {
+            System.out.println("Product " + searchID + " not found");
         }
         
          scanner.close();
