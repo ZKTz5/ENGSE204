@@ -12,7 +12,6 @@ public class Lab13 {
 
         for(int i = 0; i < r; i++) {
             for(int j = 0; j < c; j++) {
-                System.out.print("Data at [" + i + "][" + j + "]: ");
                 data[i][j] = kb.nextInt();
             }
         }
@@ -27,7 +26,7 @@ public class Lab13 {
             }
         }
 
-        System.out.println("Online Server = " + ans);
+        System.out.println(ans);
         
         kb.close();
     }
