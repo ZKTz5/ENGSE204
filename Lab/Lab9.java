@@ -5,12 +5,10 @@ public class Lab9 {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
 
-        System.out.println("กรอกจำนวนเลข:");
         int n = scanner.nextInt();
 
         int[] numbers = new int[n];
         for(int i = 0; i < n; i++) {
-            System.out.print("กรอกจำนวนเต็มที่ " + (i + 1) + ": ");
             numbers[i] = scanner.nextInt();
         }
 
@@ -20,7 +18,7 @@ public class Lab9 {
         }
         
         double average = (double) sum / n;
-        System.out.println("ค่าเฉลี่ย: " + average);
+        System.out.println(average);
 
         scanner.close();
     }    

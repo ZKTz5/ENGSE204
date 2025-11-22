@@ -3,10 +3,9 @@ import java.util.Scanner;
 
 public class Lab4 {
     public static void main(String[] args) {
-        Scanner scanner = new Scanner(System.in);
+        Scanner keyboard = new Scanner(System.in);
 
-        System.out.println("กรอกคะแนน:");
-        int score = scanner.nextInt();
+        int score = keyboard.nextInt();
 
         if (score >= 80) {
             System.out.println("A");
@@ -19,7 +18,7 @@ public class Lab4 {
         } else {
             System.out.println("F");
         }
-        scanner.close();
+        keyboard.close();
     }
     
 }

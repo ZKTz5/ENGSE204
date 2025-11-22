@@ -9,15 +9,10 @@ public class Lab10 {
 
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
-        
-        System.out.print("กรอกความกว้าง:");
         double width = scanner.nextDouble();
-
-        System.out.print("กรอกความสูง:");
         double height = scanner.nextDouble();
-
         double area = calculateArea(width, height);
-        System.out.println("พื้นที่: " + area);
+        System.out.println(area);
 
         scanner.close();
     }    

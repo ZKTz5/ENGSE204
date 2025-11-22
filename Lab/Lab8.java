@@ -3,15 +3,13 @@ import java.util.Scanner;
 
 public class Lab8 {
     public static void main(String[] args) {
-        Scanner scanner = new Scanner(System.in);
+        Scanner keyboard = new Scanner(System.in);
 
-        System.out.println("กรอกจำนวนเลข:");
-        int n = scanner.nextInt();
+        int n = keyboard.nextInt();
 
         int[] numbers = new int[n];
         for(int i = 0; i < n; i++) {
-            System.out.print("กรอกจำนวนเต็มที่ " + (i + 1) + ": ");
-            numbers[i] = scanner.nextInt();
+            numbers[i] = keyboard.nextInt();
         }
 
         int max = numbers[0];
@@ -21,8 +19,8 @@ public class Lab8 {
             }
         }
         
-        System.out.println("ค่ามากที่สุด: " + max);
+        System.out.println(max);
 
-        scanner.close();
+        keyboard.close();
     }    
 }
