@@ -1,4 +1,4 @@
-package Lab2.Lab2_1;
+package Lab2.Lab2_2;
 import java.util.Scanner;
 
 public class Student {
