@@ -17,6 +17,11 @@ public class Student {
     public String getName() {
         return this.name;
     }
+
+    public void displayInfo() {
+        System.out.println(this.studentID);
+        System.out.println(this.name);
+    }
 }
 
 class Main {
@@ -29,6 +34,6 @@ class Main {
         keyboard.close();
 
         Student s = new Student(studentID, name);
-        System.out.println(s.getStudentID() + "\n" + s.getName());
+        s.displayInfo();
     }
 }
