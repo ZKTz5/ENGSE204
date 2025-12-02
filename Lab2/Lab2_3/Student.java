@@ -26,11 +26,11 @@ class Main {
         Scanner keyboard = new Scanner(System.in);
         int n = keyboard.nextInt();
         keyboard.nextLine();
-        
+
         for (int i = 0; i < n; i++) {
-        String studentID = keyboard.nextLine();
-        String name = keyboard.nextLine();
-        new Student(studentID, name);
+            String studentID = keyboard.nextLine();
+            String name = keyboard.nextLine();
+            new Student(studentID, name);
         }
 
         keyboard.close();
