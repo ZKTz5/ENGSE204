@@ -16,14 +16,15 @@ class Main {
         Scanner keyboard = new Scanner(System.in);
 
         String Mode = keyboard.nextLine();
-        if (Mode.equals("CtoF")) {
+        if (Mode.equals("C_TO_F")) {
             double celsius = keyboard.nextDouble();
             System.out.printf("%.2f\n", TempConverter.celsiusToFahrenheit(celsius));
-        } else if (Mode.equals("FtoC")) {
+        } 
+        else if (Mode.equals("F_TO_C")) {
             double fahrenheit = keyboard.nextDouble();
             System.out.printf("%.2f\n", TempConverter.fahrenheitToCelsius(fahrenheit));
         }
 
-
+        keyboard.close();
     }
 }
