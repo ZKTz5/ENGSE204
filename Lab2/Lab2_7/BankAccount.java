@@ -23,7 +23,7 @@ public class BankAccount {
             this.balance = balance - amount;
             System.out.println("Withdraw successful");
         }
-        else{
+        else if (amount > this.balance) {
             System.out.println("Insufficient funds");
         }
     }
