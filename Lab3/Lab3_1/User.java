@@ -10,9 +10,8 @@ public class User {
         } 
         else if (username.length() < 5) {
             throw new IllegalArgumentException("Error : Username cannot be null or empty");
-        } 
-        else {
-        this.username = username;
+        } else {
+            this.username = username;
         }
     }
 
@@ -25,7 +24,7 @@ class Main {
             String username = keyboard.nextLine();
          
             User u = new User(username);
-            
+
             System.out.println(u.getUsername());
         } catch (IllegalArgumentException e) {
             System.out.println(e.getMessage());
