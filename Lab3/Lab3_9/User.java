@@ -11,13 +11,13 @@ public class User {
     public User(String username, String password) {
         if (username == null || username.isEmpty()) {
             throw new IllegalArgumentException("Username cannot be null or empty");
-        } else if (password.length() >= minPasswordLength) {
-            this.username = username;
-            this.password = password;
-            System.out.println("Creation successful.");
         } else if (password == null || password.length() < minPasswordLength) {
             this.password = "invalid";
             System.out.println("Creation failed.");
+        } else {
+            this.username = username;
+            this.password = password;
+            System.out.println("Created successful.");
         }
     }
 
