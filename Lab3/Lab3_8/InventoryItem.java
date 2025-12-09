@@ -14,7 +14,7 @@ public class InventoryItem {
             this.stock = initialStock;
         } else if (initialStock < 0) {
             this.stock = 0;
-        } 
+        }
     }
 
     public String getProductName() {
@@ -53,7 +53,7 @@ class Main {
             int initialStock = keyboard.nextInt();
 
             InventoryItem item = new InventoryItem(productName, initialStock);
-            
+
             int n = keyboard.nextInt();
             for (int i = 0; i < n; i++) {
                 String command = keyboard.next();
