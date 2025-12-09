@@ -1,5 +1,4 @@
 package Lab3.Lab3_5;
-
 import java.util.Scanner;
 
 public class DatabaseConnection {
