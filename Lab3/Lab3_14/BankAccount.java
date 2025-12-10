@@ -40,7 +40,7 @@ public class BankAccount {
         return this.balance;
     }
 
-    public static double getTotalTransactionCount() {
+    public static int getTotalTransactionCount() {
         return totalTransactionCount;
     }
 
