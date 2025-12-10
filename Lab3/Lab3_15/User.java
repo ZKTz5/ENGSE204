@@ -1,4 +1,5 @@
 package Lab3.Lab3_15;
+
 import java.util.Scanner;
 
 public class User {
@@ -17,16 +18,22 @@ public class User {
         if (max > 0) {
             maxAttempts = max;
             System.out.println("Policy updated.");
-        } else if(max <= 0) {
+        } else if (max <= 0) {
             System.out.println("Invalid policy.");
         }
     }
 
-    public String getUsername() { return null; }
+    public String getUsername() {
+        return null;
+    }
 
-    public boolean isLocked() { return isLocked; }
+    public boolean isLocked() {
+        return isLocked;
+    }
 
-    public int getFailedAttemps() { return failedAttemps; }
+    public int getFailedAttemps() {
+        return failedAttemps;
+    }
 
     public void login(String password) {
         if (isLocked) {
