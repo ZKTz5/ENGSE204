@@ -15,7 +15,7 @@ public class Product {
     }
 
     public void displayInfo() {
-        System.out.println("Product: " + name + ", Price " + price);
+        System.out.printf("Product: %s, Price: %.2f",name, price);
     }
 }
 
@@ -32,7 +32,7 @@ class Main {
             p.displayInfo();
         }else if (mode == 2) {
             String name = kb.nextLine();
-            double price = kb.nextInt();
+            double price = kb.nextDouble();
             Product p = new Product(name, price);
             p.displayInfo();
         }
