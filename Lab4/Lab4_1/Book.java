@@ -38,5 +38,6 @@ class Main {
             Book b = new Book(title, author);
             b.displayInfo();
         }
+        kb.close();
     }
 }
