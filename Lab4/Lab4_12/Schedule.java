@@ -1,7 +1,7 @@
 package Lab4.Lab4_12;
 import java.util.Scanner;
 
-class Schedule {
+public class Schedule {
     private int hour;
 
     public Schedule(int hour) { this.hour = hour; }
@@ -30,7 +30,7 @@ class EmployeeSchedule {
     }
 }
 
-public class Main {
+class Main {
     public static void main(String[] args) {
         Scanner kb = new Scanner(System.in);
 
