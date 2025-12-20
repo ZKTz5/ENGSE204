@@ -36,6 +36,7 @@ class Main{
         String baseTheme = kb.nextLine();
         int baseSize = kb.nextInt();
         boolean baseDark = kb.nextBoolean();
+        kb.nextLine();
         String userTheme = kb.nextLine();
         int userSize = kb.nextInt();
         boolean userDark = kb.nextBoolean();
