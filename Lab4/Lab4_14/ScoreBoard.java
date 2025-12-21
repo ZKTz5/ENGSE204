@@ -37,14 +37,17 @@ class Main {
 
         String gameName = kb.nextLine();
         int[] originalScores = new int[3];
+
         for (int i = 0; i < 3; i++) {
             originalScores[i] = kb.nextInt();
         }
 
+        int newValue  = kb.nextInt();
+
         ScoreBoard sb1 = new ScoreBoard(gameName, originalScores);
         ScoreBoard sb2 = new ScoreBoard(sb1);
 
-        originalScores[0] = 999;
+        originalScores[0] = newValue;
 
         sb1.displayScores();
         sb2.displayScores();
