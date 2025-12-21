@@ -1,7 +1,7 @@
 package Lab4.Lab4_15;
 import java.util.Scanner;
 
-class AuditRecord {
+public class AuditRecord {
     private final String user;
     private final String[] logMessages;
     private static int maxMessages = 3;
@@ -54,7 +54,7 @@ class AuditRecord {
     }
 }
 
-public class Main {
+class Main {
     public static void main(String[] args) {
         Scanner kb = new Scanner(System.in);
 
