@@ -1,7 +1,8 @@
 package Lab4.Lab4_15;
+
 import java.util.Scanner;
 
-public class AuditRecord {
+class AuditRecord {
     private final String user;
     private final String[] logMessages;
     private static int maxMessages = 3;
@@ -35,6 +36,7 @@ public class AuditRecord {
                 newLogs[i] = logMessages[i];
             }
             newLogs[logMessages.length] = message;
+            System.out.println(message + " added.");
             return new AuditRecord(this.user, newLogs);
         } else {
             System.out.println("Log is full.");
@@ -43,18 +45,18 @@ public class AuditRecord {
     }
 
     public void displayLog() {
-        System.out.print("User: " + user + ", Logs: [" + logMessages.length + "] ");
+        System.out.print("User: " + user + ", Logs: " + logMessages.length + " [");
         for (int i = 0; i < logMessages.length; i++) {
             System.out.print(logMessages[i]);
             if (i < logMessages.length - 1) {
                 System.out.print(", ");
             }
         }
-        System.out.println();
+        System.out.println("]");
     }
 }
 
-class Main {
+public class Main {
     public static void main(String[] args) {
         Scanner kb = new Scanner(System.in);
 
@@ -63,17 +65,25 @@ class Main {
         AuditRecord.setPolicy(max);
 
         String user = kb.nextLine();
+
         AuditRecord record = new AuditRecord(user);
 
         int n = kb.nextInt();
         kb.nextLine();
 
         for (int i = 0; i < n; i++) {
-            String msg = kb.nextLine();
-            record = record.addMessage(msg);
+            String input = kb.nextLine();
+            if (input.equals("SET_POLICY")) {
+                int newMax = kb.nextInt();
+                kb.nextLine();
+                AuditRecord.setPolicy(newMax);
+            } else {
+                record = record.addMessage(input);
+            }
         }
 
         record.displayLog();
+
         kb.close();
     }
 }
