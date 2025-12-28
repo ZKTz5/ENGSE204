@@ -43,7 +43,7 @@ class Audio extends Media {
 
 class Processor {
     public static void runProcessor(Media m) {
-        m.process(); // เรียกใช้ Polymorphism ผ่าน Parameter
+        m.process();
     }
 }
 
@@ -51,19 +51,16 @@ class Main {
     public static void main(String[] args) {
         Scanner kb = new Scanner(System.in);
 
-        // รับค่าสำหรับ Video
         String vTitle = kb.nextLine();
         int vDuration = kb.nextInt();
         kb.nextLine(); // Clear buffer
 
-        // รับค่าสำหรับ Audio
         String aTitle = kb.nextLine();
         String aQuality = kb.nextLine();
 
         Video myVideo = new Video(vTitle, vDuration);
         Audio myAudio = new Audio(aTitle, aQuality);
 
-        // ส่งออบเจ็กต์ลูกเข้าไปในเมธอดที่รับ Parameter เป็นคลาสแม่
         Processor.runProcessor(myVideo);
         Processor.runProcessor(myAudio);
 
