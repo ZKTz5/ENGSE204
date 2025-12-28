@@ -1,7 +1,7 @@
 package Lab5_11;
 import java.util.Scanner;
 
-class Document {
+public class Document {
     protected String title;
 
     public Document(String title) {
@@ -41,7 +41,7 @@ class PDFDocument extends Document {
     }
 }
 
-public class Main {
+class Main {
     public static void main(String[] args) {
         Scanner kb = new Scanner(System.in);
 
