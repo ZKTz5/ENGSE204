@@ -67,7 +67,6 @@ class Main {
 
         PayrollProcessor.process(sales);
         PayrollProcessor.process(manager);
-
        
         kb.close();
     }
