@@ -1,7 +1,7 @@
 package Lab5_13;
 import java.util.Scanner;
 
-class User {
+public class User {
     protected String name;
 
     public User(String name) {
@@ -45,7 +45,7 @@ class Admin extends Developer {
     }
 }
 
-public class Main {
+class Main {
     public static void main(String[] args) {
         Scanner kb = new Scanner(System.in);
 
