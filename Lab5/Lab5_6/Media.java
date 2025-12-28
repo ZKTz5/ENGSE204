@@ -53,7 +53,7 @@ class Main {
 
         String vTitle = kb.nextLine();
         int vDuration = kb.nextInt();
-        kb.nextLine(); // Clear buffer
+        kb.nextLine();
 
         String aTitle = kb.nextLine();
         String aQuality = kb.nextLine();
