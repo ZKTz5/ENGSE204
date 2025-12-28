@@ -1,7 +1,7 @@
 package Lab5_6;
 import java.util.Scanner;
 
-public class Media {
+class Media {
     protected String title;
 
     public Media(String title) {
@@ -44,7 +44,7 @@ class Audio extends Media {
 class Processor {
     public static void runProcessor(Media m) {
         m.process(); 
-    }
+    } 
 }
 
 class Main {
@@ -59,9 +59,8 @@ class Main {
         String AudioQuality = kb.nextLine();
 
         Video Vdo1 = new Video(VdoTitle, VdoDuration);
-        Audio Audio1 = new Audio(AudioTitle, AudioQuality);
-
         Processor.runProcessor(Vdo1);
+        Audio Audio1 = new Audio(AudioTitle, AudioQuality);
         Processor.runProcessor(Audio1);
 
         kb.close();
